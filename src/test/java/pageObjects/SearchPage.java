@@ -15,7 +15,7 @@ public class SearchPage extends BasePage
 		super(driver);
 	}	
 	
-		@FindBy(xpath="//*[@id='content']/div[3]//img")
+		@FindBy(xpath="//*[@id='content']/div[5]//img")
 		List<WebElement> searchProducts;
 				
 		@FindBy(xpath="//input[@id='input-quantity']")

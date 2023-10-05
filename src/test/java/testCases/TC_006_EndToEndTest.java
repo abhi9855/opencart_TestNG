@@ -36,10 +36,10 @@ public class TC_006_EndToEndTest extends BaseClass {
 	String email=randomeString() + "@gmail.com";
 	regpage.setEmail(email);// randomly generated the email
 			
-	regpage.setTelephone("1234567");
+	//regpage.setTelephone("1234567");
 	
 	regpage.setPassword("test123");
-	regpage.setConfirmPassword("test123");
+	//regpage.setConfirmPassword("test123");
 	regpage.setPrivacyPolicy();
 	regpage.clickContinue();
 	Thread.sleep(3000);
@@ -50,6 +50,10 @@ public class TC_006_EndToEndTest extends BaseClass {
 	myassert.assertEquals(confmsg, "Your Account Has Been Created!"); //validation
 	
 	MyAccountPage mc=new MyAccountPage(driver);
+	logger.info("Clicked on My account link");
+	hp.clickMyAccount();
+	
+	logger.info("Clicked on logout");
 	mc.clickLogout();
 	Thread.sleep(3000);
 	
@@ -119,15 +123,18 @@ public class TC_006_EndToEndTest extends BaseClass {
 	Thread.sleep(1000);
 	ch.clickOnContinueAfterBillingAddress();
 	Thread.sleep(1000);
-	ch.clickOnContinueAfterDeliveryAddress();
-	Thread.sleep(1000);
+//	ch.clickOnContinueAfterDeliveryAddress();
+//	Thread.sleep(1000);
 	ch.setDeliveryMethodComment("testing...");
 	Thread.sleep(1000);
-	ch.clickOnContinueAfterDeliveryMethod();
+	ch.clickOnContinueAfterShipingMethod();
 	Thread.sleep(1000);
-	ch.selectTermsAndConditions();
+	ch.selectchkboxShipingMethod();
+	ch.btnShipingMethodClick();
 	Thread.sleep(1000);
 	ch.clickOnContinueAfterPaymentMethod();
+	ch.selectchkboxPaymentMethod();
+	ch.btnPaymentMethodClick();
 	Thread.sleep(2000);
 	
 	String total_price_inOrderPage=ch.getTotalPriceBeforeConfOrder();

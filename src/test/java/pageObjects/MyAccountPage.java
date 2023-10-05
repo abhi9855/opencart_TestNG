@@ -13,7 +13,7 @@ public class MyAccountPage extends BasePage {
 	@FindBy(xpath = "//h2[text()='My Account']") // MyAccount Page heading
 	WebElement msgHeading;
 	
-	@FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")
+	@FindBy(xpath = "//div[@class='dropdown']//a[text()='Logout']")
 	WebElement lnkLogout;
 	
 

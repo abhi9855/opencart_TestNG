@@ -1,12 +1,20 @@
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\pageObjects\AccountRegistrationPage.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\pageObjects\HomePage.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\utilities\ExtentReportManager.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\utilities\ExcelUtility.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\testCases\TC_002_LoginTest.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\pageObjects\MyAccountPage.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\pageObjects\BasePage.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\testCases\TC_003_LoginDDT.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\utilities\DataProviders.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\testBase\BaseClass.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\pageObjects\LoginPage.java
-C:\Users\pavan\myworkspace\Aug19Batch\opencart_aug10\src\test\java\testCases\TC_001_AccountRegistrationTest.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\AccountRegistrationPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testBase\BaseClass.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_004_Search.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_006_EndToEndTest.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\LoginPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\utilities\DataProviders.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\HomePage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\utilities\ExtentReportManager.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_004_SearchProductTest.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\utilities\ExcelUtility.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\BasePage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\ShoppingCartPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_003_LoginDDT.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_001_AccountRegistrationTest.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\CheckoutPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\MyAccountPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC005_AdvSearch.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\pageObjects\SearchPage.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_005_AddToCartPageTest.java
+D:\Automating testing\Selenium_Java\Frameworks\opencart_aug10\src\test\java\testCases\TC_002_LoginTest.java

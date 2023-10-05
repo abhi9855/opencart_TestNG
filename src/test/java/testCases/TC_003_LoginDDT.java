@@ -34,6 +34,7 @@ public class TC_003_LoginDDT extends BaseClass {
 		{
 			if(targetpage==true)
 			{
+				hp.clickMyAccount();
 				macc.clickLogout();
 				Assert.assertTrue(true);
 			}

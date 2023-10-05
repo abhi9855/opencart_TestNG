@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,61 +14,67 @@ public class CheckoutPage extends BasePage{
 		super(driver);
 	}	
 	
-	@FindBy(xpath="//input[@id='input-payment-firstname']")
+	@FindBy(xpath="//input[@id='input-shipping-firstname']")
 	WebElement txtfirstName;
 	
-	@FindBy(xpath="//input[@id='input-payment-lastname']")
+	@FindBy(xpath="//input[@id='input-shipping-lastname']")
 	WebElement txtlastName;
 	
 
-	@FindBy(xpath="//input[@id='input-payment-address-1']")
+	@FindBy(xpath="//input[@id='input-shipping-address-1']")
 	WebElement txtaddress1;
 	
-	@FindBy(xpath="//input[@id='input-payment-address-2']")
+	@FindBy(xpath="//input[@id='input-shipping-address-2']")
 	WebElement txtaddress2;
 	
 	
-	@FindBy(xpath="//input[@id='input-payment-city']")
+	@FindBy(xpath="//input[@id='input-shipping-city']")
 	WebElement txtcity;
 	
 	
-	@FindBy(xpath="//input[@id='input-payment-postcode']")
+	@FindBy(xpath="//input[@id='input-shipping-postcode']")
 	WebElement txtpin;
 	
 	
-	@FindBy(xpath="//select[@id='input-payment-country']")
+	@FindBy(xpath="//select[@id='input-shipping-country']")
 	WebElement drpCountry;
 	
 	
-	@FindBy(xpath="//select[@id='input-payment-zone']")
+	@FindBy(xpath="//select[@id='input-shipping-zone']")
 	WebElement drpState;
 
-	@FindBy(xpath="//input[@id='button-payment-address']")
+	@FindBy(xpath="//button[@id='button-shipping-address']")
 	WebElement btncontinueBillingAddress;
 	
-	@FindBy(xpath="//input[@id='button-shipping-address']")
+	@FindBy(xpath="//button[@id='button-shipping-address']")
 	WebElement btncontinueDeliveryAddress;
 	
 	@FindBy(xpath="//textarea[@name='comment']")
 	WebElement txtDeliveryMethod;
 	
-	@FindBy(xpath="//input[@id='button-shipping-method']")
-	WebElement btncontinueShippingAddress;
+	@FindBy(xpath="//button[@id='button-shipping-methods']")
+	WebElement btncontinueShippingMethod;
 	
+	@FindBy(xpath="//div[@class='form-check']//input[@name='shipping_method']")
+	WebElement chkboxShipingMethod;
 	
-	@FindBy(xpath="//input[@name='agree']")
-	WebElement chkboxTerms;
+	@FindBy(xpath="//div[@class='text-end']/button[@id='button-shipping-method']")
+	WebElement btnShipingMethod;
 	
-	
-	@FindBy(xpath="//input[@id='button-payment-method']")
+	@FindBy(xpath="//button[@id='button-payment-methods']")
 	WebElement btncontinuePaymentMethod;
 	
+	@FindBy(xpath="//div[@class='form-check']//input[@name='payment_method']")
+	WebElement chkboxPaymentMethod;
 	
-	@FindBy(xpath="//strong[text()='Total:']//following::td")
+	@FindBy(xpath="//div[@class='text-end']/button[@id='button-payment-method']")
+	WebElement btnPaymentMethod;
+	
+	@FindBy(xpath="//*[@id='checkout-confirm']/div[1]/table//strong[text()='Total']//following::td")
 	WebElement lblTotalPrice;
 	
 	
-	@FindBy(xpath="//input[@id='button-confirm']")
+	@FindBy(xpath="//div[@id='checkout-payment']//button[text()='Confirm Order']")
 	WebElement btnConfOrder;
 	
 	
@@ -132,19 +139,36 @@ public class CheckoutPage extends BasePage{
 		
 	}
 	
-	public void clickOnContinueAfterDeliveryMethod()
+	public void clickOnContinueAfterShipingMethod()
 	{
-		btncontinueShippingAddress.click();
+		btncontinueShippingMethod.click();
 	}
 	
-	public void selectTermsAndConditions()
+	public void selectchkboxShipingMethod()
 	{
-		chkboxTerms.click();
+		chkboxShipingMethod.click();
+	}
+	
+	public void btnShipingMethodClick()
+	{
+		btnShipingMethod.click();
 	}
 	
 	public void clickOnContinueAfterPaymentMethod()
 	{
-		btncontinuePaymentMethod.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("arguments[0].click();", btncontinuePaymentMethod);
+		//btncontinuePaymentMethod.click();
+	}
+	
+	public void selectchkboxPaymentMethod()
+	{
+		chkboxPaymentMethod.click();
+	}
+	
+	public void btnPaymentMethodClick()
+	{
+		btnPaymentMethod.click();
 	}
 	
 	public String  getTotalPriceBeforeConfOrder()

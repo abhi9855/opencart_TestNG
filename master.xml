@@ -14,8 +14,8 @@
    	   <class name="testCases.TC_002_LoginTest"/>
   	   <class name="testCases.TC_004_SearchProductTest"/>
    	   <class name="testCases.TC_005_AddToCartPageTest"/> 
-		<class name="testCases.TC_006_EndToEndTest"/>
-	<!--  <class name="testCases.TC_003_LoginDataDrivenTest"/>  -->
+	   <class name="testCases.TC_006_EndToEndTest"/> 
+	   <class name="testCases.TC_003_LoginDDT"/> 
     </classes>
   </test> <!-- OpencartTest -->
 </suite> <!-- OpencartSuite -->

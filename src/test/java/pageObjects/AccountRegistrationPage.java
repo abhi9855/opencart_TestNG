@@ -32,7 +32,7 @@ public class AccountRegistrationPage extends BasePage {
 		@FindBy(name = "agree")
 		WebElement chkdPolicy;
 
-		@FindBy(xpath = "//input[@value='Continue']")
+		@FindBy(xpath = "//button[@type='submit']")
 		WebElement btnContinue;
 
 		@FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
