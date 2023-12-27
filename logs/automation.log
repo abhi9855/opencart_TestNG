@@ -171,3 +171,19 @@
 11:19:16.308 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
 11:19:16.311 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
 11:19:17.886 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
+11:47:51.321 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+11:47:51.992 [main] INFO  testCases.TC_004_SearchProductTest -  Finished TC_004_SearchProductTest 
+11:47:54.751 [main] INFO  testCases.TC_005_AddToCartPageTest -  Starting TC_005_AddToCartPageTest 
+11:47:55.959 [main] INFO  testCases.TC_005_AddToCartPageTest -  Finished TC_004_SearchProductTest 
+11:48:01.931 [main] INFO  testCases.TC_006_EndToEndTest - Clicked on My account link
+11:48:01.975 [main] INFO  testCases.TC_006_EndToEndTest - Clicked on logout
+11:48:37.473 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
+11:48:38.781 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
+11:48:38.783 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
+11:48:49.612 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
+11:48:49.614 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
+11:49:00.230 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
+11:49:00.233 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
+11:49:10.784 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
+11:49:10.787 [main] INFO  testCases.TC_003_LoginDDT - *** Starting TC_003_LoginDDT******
+11:49:11.834 [main] INFO  testCases.TC_003_LoginDDT - *** Finished TC_003_LoginDDT******
